@@ -1,0 +1,14 @@
+[package]
+name = "yingshi-cli"
+version = "0.1.0"
+authors = ["babydragon <lingjie.jinlj@alibaba-inc.com>"]
+edition = "2018"
+description = "yingshi cmdline"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yingshi-client = {path = "../yingshi-client", version = "0.1.0"}
+clap = "3.0.0-beta.2"
+tokio = { version = "0.2", features = ["full"] }
+chrono = "0.4"

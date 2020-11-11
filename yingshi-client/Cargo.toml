@@ -1,0 +1,22 @@
+[package]
+name = "yingshi-client"
+version = "0.1.0"
+authors = ["babydragon <lingjie.jinlj@alibaba-inc.com>"]
+edition = "2018"
+description = "yingshi client, interact with yingshi open API"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10", features = ["json"] }
+tokio = { version = "0.2", features = ["full"] }
+serde= { version = "1.0", features = ["derive"] }
+serde_repr = "0.1"
+enumflags2 = "0.6"
+config = "0.10"
+lazy_static = "1.4.0"
+toml = "0.5"
+md-5 = "0.9.1"
+aes = "0.6.0"
+block-modes = "0.7.0"
+chrono = "0.4"
